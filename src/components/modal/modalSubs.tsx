@@ -43,7 +43,7 @@ const ModalSubs = ({ isOpen, onClose, qrValue, userId }: IModal) => {
                   </div>
                   <QRCode
                     size={256}
-                    value={`http://192.168.222.232:3000/payment/${qrValue}/${userId}`}
+                    value={`https://assignment-nextjs-fidyah-lu1p.vercel.app/payment/${qrValue}/${userId}`}
                     className="mt-6"
                   />
                 </div>
