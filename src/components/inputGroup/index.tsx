@@ -1,13 +1,11 @@
-export interface IInputGroup {
+interface IInputGroup {
   type?: string;
   label: string;
   value?: string | number;
   name: string;
   placeholder: string;
   error?: string | null;
-  handleInput?: (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => void;
+  handleInput?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const InputGroup = ({
